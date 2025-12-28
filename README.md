@@ -36,7 +36,7 @@ Built with HTML, CSS, and JavaScript, this tool includes real-time conversion, a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Adarshteq/Temperature-Converter.git
+   git clone https://github.com/Adarshtechy/TempConverter.git
    ```
 
 2. Open `index.html` in your browser.
@@ -61,7 +61,6 @@ Temperature-Converter/
 ├── style.css           # Responsive styles
 ├── script.js           # Conversion logic + UI interactions
 └── README.md           # You're here!
-└──Licence              # Here is MIT Licence
 ```
 
 ## 🌟 Highlights
@@ -74,6 +73,4 @@ Temperature-Converter/
 
 - **No Frameworks**: Vanilla JS for lightweight performance.
 
-## 📄 License
 
-This is under MIT Licence.
