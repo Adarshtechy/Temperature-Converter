@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temperature Converter</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1><i class="fas fa-thermometer-half"></i> Temperature Converter</h1>
-      <button id="theme-toggle" aria-label="Toggle dark mode" type="button"><i class="fas fa-moon"></i></button>
+  <div class="converter">
+    <h1>🌡️ Temperature Converter</h1>
+    <p class="subtitle">Convert between Celsius, Fahrenheit, and Kelvin</p>
+
+    <div class="form-group">
+      <label>Temperature</label>
+      <input type="number" id="temperature" placeholder="Enter temperature" />
     </div>
 
-    <div class="input-group">
-      <label for="temperature"><i class="fas fa-temperature-high"></i> Temperature:</label>
-      <input type="number" id="temperature" placeholder="e.g., 25" autofocus>
-    </div>
-
-    <div class="unit-selection">
-      <div class="input-group">
-        <label for="from-unit">From:</label>
-        <select id="from-unit">
-          <option value="Celsius">Celsius (°C)</option>
-          <option value="Fahrenheit">Fahrenheit (°F)</option>
-          <option value="Kelvin">Kelvin (K)</option>
+    <div class="row">
+      <div class="form-group">
+        <label>From</label>
+        <select id="fromUnit">
+          <option value="C">Celsius (°C)</option>
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="K">Kelvin (K)</option>
         </select>
       </div>
-      <div class="input-group">
-        <label for="to-unit">To:</label>
-        <select id="to-unit">
-          <option value="Fahrenheit">Fahrenheit (°F)</option>
-          <option value="Celsius">Celsius (°C)</option>
-          <option value="Kelvin">Kelvin (K)</option>
+
+      <div class="form-group">
+        <label>To</label>
+        <select id="toUnit">
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="C">Celsius (°C)</option>
+          <option value="K">Kelvin (K)</option>
         </select>
       </div>
     </div>
 
-    <div class="buttons">
-      <button id="convert-btn" type="button"><i class="fas fa-exchange-alt"></i> Convert</button>
-      <button id="copy-btn" type="button"><i class="far fa-copy"></i> Copy</button>
-      <button id="clear-btn" type="button"><i class="fas fa-trash-alt"></i> Clear</button>
-    </div>
+    <button id="convertBtn">Convert</button>
 
-    <div class="result" id="result"></div>
-
-    <div class="visualization">
-      <div class="thermometer">
-        <div class="mercury" id="mercury"></div>
-      </div>
-      <span id="temp-scale"></span>
-    </div>
-
-    <div class="history">
-      <h3><i class="fas fa-history"></i> History</h3>
-      <ul id="history-list"></ul>
+    <div class="result" id="result">
+      Enter a value and click Convert
     </div>
   </div>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
